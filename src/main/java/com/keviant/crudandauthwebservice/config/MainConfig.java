@@ -11,9 +11,9 @@ public class MainConfig {
         String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + dbUri.getPath() + ":" + dbUri.getPort() + dbUri.getPath();
 
         BasicDataSource basicDataSource = new BasicDataSource();
-        basicDataSource.setUrl(dbUrl);
-        basicDataSource.setUsername(username);
-        basicDataSource.setPassword(password);
+        basicDataSource.setUrl("jdbc:mysql://localhost:3306/template_bdd");
+        basicDataSource.setUsername("root");
+        basicDataSource.setPassword("[VaD75q*EuCuu4:/");
 
         return basicDataSource;
     }
